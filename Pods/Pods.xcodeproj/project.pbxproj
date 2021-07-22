@@ -1,0 +1,923 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D605CB4A8E36A327F7B7CA94A5F1E16 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A638137346038A1071FF2E6DD9163E /* Shared.swift */; };
+		18DDEC8005B616FFC0A7738DCEC48706 /* IBMSwiftSDKCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68B698E39370A50CECAF0C81F59D04A4 /* IBMSwiftSDKCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26CF1B7A652EF55C40969D7714E672EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B31B55948327FCE778860490F5EAC72 /* Foundation.framework */; };
+		2AAD37619C70C3BAC535E8E96EFA0EE3 /* RestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82692D8D116AAD4DFE11BD6515217C /* RestRequest.swift */; };
+		2D0E115FFBA681D663D89F1E04D6C071 /* IBMWatsonLanguageTranslatorV3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5175B2F925474362F1B7BD9CB6E18A38 /* IBMWatsonLanguageTranslatorV3-dummy.m */; };
+		2E8E23D04A09946D21940F4A11027FA0 /* DeleteModelResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C49D88CC6B956FA96BACA51EFDFB1 /* DeleteModelResult.swift */; };
+		2EEFF088C1205E6C09F2F96F2DB51CEB /* IdentifiedLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B83D9A7D9130459240F3D56317C268C /* IdentifiedLanguage.swift */; };
+		311419894F289D845C5537DA682EE17B /* InsecureConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102320CA529AA12B3E456E62D84D3B9 /* InsecureConnection.swift */; };
+		4BEA7B89139FCD2BC124408842859A55 /* DocumentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF770FB75C96801E6D8ADB4E82CDFC /* DocumentList.swift */; };
+		4E45E4FBC5C59389FE63DD563A19DF8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B31B55948327FCE778860490F5EAC72 /* Foundation.framework */; };
+		58BCECD99BBAAB8F95EDA367DE740E45 /* IBMSwiftSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46ACAE2D7BB5CFD1E5306E8237994D96 /* IBMSwiftSDKCore.framework */; };
+		58D030493FF0E56744B5EC009E1FC2A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B31B55948327FCE778860490F5EAC72 /* Foundation.framework */; };
+		59354C94A50B483675B4C9957DA0E761 /* CloudPakForDataAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A3160EEB94EC2FDDAB7D2DF020E104 /* CloudPakForDataAuthenticator.swift */; };
+		5E23AF5BA33DF108D10C3F0C29912CA1 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE5AF4B683EB8B21026D3D1D7815AAE /* MultipartFormData.swift */; };
+		6463CF8A091A1004DA4C7D6D4C465050 /* IBMSwiftSDKCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B3DC0BCE2458BD676CB6C84BB0C1284 /* IBMSwiftSDKCore-dummy.m */; };
+		65992668D051277A55EC8E2A18FB931B /* IBMWatsonLanguageTranslatorV3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E60DDD042A0BFA12D5ECA562F74A6166 /* IBMWatsonLanguageTranslatorV3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AB5BD38EBAA70F49E5AB179DC9D5B6F /* LanguageTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A9DB4AB2005568E61ABC4C2021D02 /* LanguageTranslator.swift */; };
+		6FA1A1CCAC31B709EF1420192C3A2BE0 /* InsecureConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696851FE529E2F6EA1C147D5728A09B6 /* InsecureConnection.swift */; };
+		7205FDE4DDC8C987A9CA3E7309C8177F /* IdentifiableLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0E84BAA3D7936EB9070ADFC16C0AFC /* IdentifiableLanguage.swift */; };
+		76254230A99D8AE72320C62F3B06F7A8 /* TranslationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7321DDBD6A9F61AF0E6F39871F3F478 /* TranslationModel.swift */; };
+		785C4BE567B07F4844634B5D0BFA82CA /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BAE4FEEA4096285AA19CD693FF66D4 /* JWT.swift */; };
+		7E921DB0F2F2CF67CB0350B3E0A1831C /* IdentifiedLanguages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2376F767769685B1CD35541E527B1B /* IdentifiedLanguages.swift */; };
+		8008152C269A909A95FEB5AB079167E3 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABC14713FA3785D8871157D1A69430F /* Translation.swift */; };
+		80DF81F082D9C2AE5DA1E8F9FEE8DA80 /* RestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE43E4625F3199767AA2CE3ED5690AC /* RestResponse.swift */; };
+		86D168DEEA9F1B0483E5D24C40382A93 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29107FEFDCF7DC811202FE1AE8F22795 /* Authentication.swift */; };
+		891829B1B3A1FE3E3AEEB4517EFE6CA4 /* ConfigBasedAuthenticatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5B70B7A3798388E7C585AB1C3AF507 /* ConfigBasedAuthenticatorFactory.swift */; };
+		8AE2E5E92206C6ACAA232325C784B3FA /* IdentifiableLanguages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681EAC36FDA1F9AA475A290B4D0B472E /* IdentifiableLanguages.swift */; };
+		9A5A4C89A39379E1A3EB09F39B2453E3 /* RestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E3D7E6FA231A5F578F41AA1FC4465 /* RestError.swift */; };
+		A2BA09A91052C6026399ACCE45A6207B /* DocumentStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A83BECDE1E734EE7BA58E183A88A35 /* DocumentStatus.swift */; };
+		A3491D7A07F44244D2158BCA31314E71 /* TranslationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674EC97BE238A310A46C2BBD8BA55FD6 /* TranslationResult.swift */; };
+		AA9560C73201DC9B6F2D888C54935890 /* IAMAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA937A9A773A42D3D1BCF8995BACC80B /* IAMAuthenticator.swift */; };
+		ACAF56A4EDCF29ADA55009B72D74CA68 /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762BE8166DEE2268BE5830BE7A528F7D /* Languages.swift */; };
+		B787B5FCD2787858439AF870C5E0B711 /* CodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733B2B22D49207DC67CB6A7C711392EE /* CodableExtensions.swift */; };
+		BEF989293467C6F97EF43AF1F63BC340 /* Pods-WordReminder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F6F5A1905639EF60A6E3D952B61B59A /* Pods-WordReminder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8D48DC67D1EF83CC85E3EF245748E93 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = F047F3727C3BF49CA0BEC3DA10FFEE58 /* Language.swift */; };
+		D464F1179583F0E62471B9B88DFC4B75 /* TranslationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA128EEAA2749D54FE623DF8E3E7B9B /* TranslationModels.swift */; };
+		D71E6CFC19849ABFAABACD17FFFAD613 /* Pods-WordReminder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F871F7D5B10E3E2102CE355A0DA102 /* Pods-WordReminder-dummy.m */; };
+		D75AE0BE3046E4AE278FF5A098B5769A /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F75927ABF7237F4554F8A196690BA6 /* JSON.swift */; };
+		FDFFB46B16962698755E53062E1F40FA /* CredentialUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9DF47E5119713B8D74928E77266728 /* CredentialUtils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4412D82486A07E508884765374DD798F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C212BBFAF6FC8270BF5BEF8057998E30;
+			remoteInfo = IBMSwiftSDKCore;
+		};
+		D60F445D10E8AF8D4961D399F22023EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2B724283F9BE15AC7375A6203787C69;
+			remoteInfo = IBMWatsonLanguageTranslatorV3;
+		};
+		DD4CA5F5FFB10F70B4D3F8F4B4FFADEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C212BBFAF6FC8270BF5BEF8057998E30;
+			remoteInfo = IBMSwiftSDKCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05F871F7D5B10E3E2102CE355A0DA102 /* Pods-WordReminder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WordReminder-dummy.m"; sourceTree = "<group>"; };
+		0D5B70B7A3798388E7C585AB1C3AF507 /* ConfigBasedAuthenticatorFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConfigBasedAuthenticatorFactory.swift; path = Sources/IBMSwiftSDKCore/Authentication/ConfigBasedAuthenticatorFactory.swift; sourceTree = "<group>"; };
+		10F2D7BA85C08E63CBC2813A779CFF79 /* IBMSwiftSDKCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMSwiftSDKCore.debug.xcconfig; sourceTree = "<group>"; };
+		17A3160EEB94EC2FDDAB7D2DF020E104 /* CloudPakForDataAuthenticator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloudPakForDataAuthenticator.swift; path = Sources/IBMSwiftSDKCore/Authentication/CloudPakForDataAuthenticator.swift; sourceTree = "<group>"; };
+		23BAE4FEEA4096285AA19CD693FF66D4 /* JWT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWT.swift; path = Sources/IBMSwiftSDKCore/Authentication/JWT.swift; sourceTree = "<group>"; };
+		29107FEFDCF7DC811202FE1AE8F22795 /* Authentication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authentication.swift; path = Sources/IBMSwiftSDKCore/Authentication/Authentication.swift; sourceTree = "<group>"; };
+		29861B0961972F7485EC1900BB8999B9 /* Pods-WordReminder-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WordReminder-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2DE43E4625F3199767AA2CE3ED5690AC /* RestResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestResponse.swift; path = Sources/IBMSwiftSDKCore/RestResponse.swift; sourceTree = "<group>"; };
+		2F408818939DF85D05765918849C3B0C /* IBMSwiftSDKCore-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IBMSwiftSDKCore-Info.plist"; sourceTree = "<group>"; };
+		3B7E3D7E6FA231A5F578F41AA1FC4465 /* RestError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestError.swift; path = Sources/IBMSwiftSDKCore/RestError.swift; sourceTree = "<group>"; };
+		3B82692D8D116AAD4DFE11BD6515217C /* RestRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestRequest.swift; path = Sources/IBMSwiftSDKCore/RestRequest.swift; sourceTree = "<group>"; };
+		3E2376F767769685B1CD35541E527B1B /* IdentifiedLanguages.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IdentifiedLanguages.swift; path = Sources/LanguageTranslatorV3/Models/IdentifiedLanguages.swift; sourceTree = "<group>"; };
+		3F2EDFE611E41664ACF0F407D2FFCA19 /* IBMSwiftSDKCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMSwiftSDKCore.release.xcconfig; sourceTree = "<group>"; };
+		42A638137346038A1071FF2E6DD9163E /* Shared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shared.swift; path = Sources/SupportingFiles/Shared.swift; sourceTree = "<group>"; };
+		46ACAE2D7BB5CFD1E5306E8237994D96 /* IBMSwiftSDKCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBMSwiftSDKCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47E5C4FAC34AE1B7ABA42689220096FF /* Pods-WordReminder-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WordReminder-Info.plist"; sourceTree = "<group>"; };
+		5175B2F925474362F1B7BD9CB6E18A38 /* IBMWatsonLanguageTranslatorV3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IBMWatsonLanguageTranslatorV3-dummy.m"; sourceTree = "<group>"; };
+		5348DA4ED7F439EF529BE20FB50AD020 /* IBMWatsonLanguageTranslatorV3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMWatsonLanguageTranslatorV3.release.xcconfig; sourceTree = "<group>"; };
+		5877AF40BDACBBAD53CB8743283CA7D9 /* Pods-WordReminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WordReminder.debug.xcconfig"; sourceTree = "<group>"; };
+		5AE5AF4B683EB8B21026D3D1D7815AAE /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Sources/IBMSwiftSDKCore/MultipartFormData.swift; sourceTree = "<group>"; };
+		5B3DC0BCE2458BD676CB6C84BB0C1284 /* IBMSwiftSDKCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IBMSwiftSDKCore-dummy.m"; sourceTree = "<group>"; };
+		674EC97BE238A310A46C2BBD8BA55FD6 /* TranslationResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TranslationResult.swift; path = Sources/LanguageTranslatorV3/Models/TranslationResult.swift; sourceTree = "<group>"; };
+		681EAC36FDA1F9AA475A290B4D0B472E /* IdentifiableLanguages.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IdentifiableLanguages.swift; path = Sources/LanguageTranslatorV3/Models/IdentifiableLanguages.swift; sourceTree = "<group>"; };
+		68B698E39370A50CECAF0C81F59D04A4 /* IBMSwiftSDKCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMSwiftSDKCore-umbrella.h"; sourceTree = "<group>"; };
+		696851FE529E2F6EA1C147D5728A09B6 /* InsecureConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InsecureConnection.swift; path = Sources/IBMSwiftSDKCore/Authentication/InsecureConnection.swift; sourceTree = "<group>"; };
+		6ABC14713FA3785D8871157D1A69430F /* Translation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Translation.swift; path = Sources/LanguageTranslatorV3/Models/Translation.swift; sourceTree = "<group>"; };
+		6B31B55948327FCE778860490F5EAC72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6E9DF47E5119713B8D74928E77266728 /* CredentialUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CredentialUtils.swift; path = Sources/IBMSwiftSDKCore/CredentialUtils.swift; sourceTree = "<group>"; };
+		733B2B22D49207DC67CB6A7C711392EE /* CodableExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableExtensions.swift; path = Sources/IBMSwiftSDKCore/CodableExtensions.swift; sourceTree = "<group>"; };
+		73865DADA70DA57473471B80B7716C9A /* Pods_WordReminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordReminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		762BE8166DEE2268BE5830BE7A528F7D /* Languages.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Languages.swift; path = Sources/LanguageTranslatorV3/Models/Languages.swift; sourceTree = "<group>"; };
+		77A83BECDE1E734EE7BA58E183A88A35 /* DocumentStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentStatus.swift; path = Sources/LanguageTranslatorV3/Models/DocumentStatus.swift; sourceTree = "<group>"; };
+		85EECA8B683491CE7C64ABF3D4CF8752 /* Pods-WordReminder-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WordReminder-frameworks.sh"; sourceTree = "<group>"; };
+		882EDE0E4573EB1EB82ACA0F93BD9FD9 /* Pods-WordReminder-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WordReminder-acknowledgements.plist"; sourceTree = "<group>"; };
+		8B83D9A7D9130459240F3D56317C268C /* IdentifiedLanguage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IdentifiedLanguage.swift; path = Sources/LanguageTranslatorV3/Models/IdentifiedLanguage.swift; sourceTree = "<group>"; };
+		8D39403BF9BA19A0AC919B03A85904FA /* Pods-WordReminder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WordReminder.modulemap"; sourceTree = "<group>"; };
+		8EE3477F3F43682F98A325BF1B9E4882 /* IBMWatsonLanguageTranslatorV3-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IBMWatsonLanguageTranslatorV3-Info.plist"; sourceTree = "<group>"; };
+		8FDADAA400D51AB1F9051607B4D6F6A8 /* IBMWatsonLanguageTranslatorV3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMWatsonLanguageTranslatorV3.debug.xcconfig; sourceTree = "<group>"; };
+		94DF770FB75C96801E6D8ADB4E82CDFC /* DocumentList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentList.swift; path = Sources/LanguageTranslatorV3/Models/DocumentList.swift; sourceTree = "<group>"; };
+		9849D37CCC99CA35D47A2AED108ED210 /* Pods-WordReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WordReminder.release.xcconfig"; sourceTree = "<group>"; };
+		9AA128EEAA2749D54FE623DF8E3E7B9B /* TranslationModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TranslationModels.swift; path = Sources/LanguageTranslatorV3/Models/TranslationModels.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F6F5A1905639EF60A6E3D952B61B59A /* Pods-WordReminder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WordReminder-umbrella.h"; sourceTree = "<group>"; };
+		A57853DAC9DB287B456C62E20ED88CB4 /* IBMSwiftSDKCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMSwiftSDKCore-prefix.pch"; sourceTree = "<group>"; };
+		BD915CBE5276790BD591B30A086646BB /* IBMWatsonLanguageTranslatorV3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonLanguageTranslatorV3-prefix.pch"; sourceTree = "<group>"; };
+		CA937A9A773A42D3D1BCF8995BACC80B /* IAMAuthenticator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IAMAuthenticator.swift; path = Sources/IBMSwiftSDKCore/Authentication/IAMAuthenticator.swift; sourceTree = "<group>"; };
+		D102320CA529AA12B3E456E62D84D3B9 /* InsecureConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InsecureConnection.swift; path = Sources/SupportingFiles/InsecureConnection.swift; sourceTree = "<group>"; };
+		D7321DDBD6A9F61AF0E6F39871F3F478 /* TranslationModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TranslationModel.swift; path = Sources/LanguageTranslatorV3/Models/TranslationModel.swift; sourceTree = "<group>"; };
+		D7BC3B6AB1E4137B03F61EEDDCE61162 /* IBMSwiftSDKCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBMSwiftSDKCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7F75927ABF7237F4554F8A196690BA6 /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = Sources/IBMSwiftSDKCore/JSON.swift; sourceTree = "<group>"; };
+		DC4C49D88CC6B956FA96BACA51EFDFB1 /* DeleteModelResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeleteModelResult.swift; path = Sources/LanguageTranslatorV3/Models/DeleteModelResult.swift; sourceTree = "<group>"; };
+		E20A9DB4AB2005568E61ABC4C2021D02 /* LanguageTranslator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LanguageTranslator.swift; path = Sources/LanguageTranslatorV3/LanguageTranslator.swift; sourceTree = "<group>"; };
+		E60DDD042A0BFA12D5ECA562F74A6166 /* IBMWatsonLanguageTranslatorV3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonLanguageTranslatorV3-umbrella.h"; sourceTree = "<group>"; };
+		ECBF85F4AE804692099E06922D4F05E1 /* IBMWatsonLanguageTranslatorV3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IBMWatsonLanguageTranslatorV3.modulemap; sourceTree = "<group>"; };
+		EE0E84BAA3D7936EB9070ADFC16C0AFC /* IdentifiableLanguage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IdentifiableLanguage.swift; path = Sources/LanguageTranslatorV3/Models/IdentifiableLanguage.swift; sourceTree = "<group>"; };
+		F047F3727C3BF49CA0BEC3DA10FFEE58 /* Language.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Language.swift; path = Sources/LanguageTranslatorV3/Models/Language.swift; sourceTree = "<group>"; };
+		FA4CD253F8AFFDA1AECB557B3A947BF0 /* LanguageTranslator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LanguageTranslator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE3CD13D2793AFC67B6B3E08916F182 /* IBMSwiftSDKCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IBMSwiftSDKCore.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		579CB7596D00961B81C422D57DE83719 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58D030493FF0E56744B5EC009E1FC2A2 /* Foundation.framework in Frameworks */,
+				58BCECD99BBAAB8F95EDA367DE740E45 /* IBMSwiftSDKCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DEC517DBCCBE062D49EA2B433AACBB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26CF1B7A652EF55C40969D7714E672EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B02BC3EDD97C4B5C693165C5F2F86DB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E45E4FBC5C59389FE63DD563A19DF8B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		029C737763A4C6692D25B86A21E16975 /* IBMWatsonLanguageTranslatorV3 */ = {
+			isa = PBXGroup;
+			children = (
+				DC4C49D88CC6B956FA96BACA51EFDFB1 /* DeleteModelResult.swift */,
+				94DF770FB75C96801E6D8ADB4E82CDFC /* DocumentList.swift */,
+				77A83BECDE1E734EE7BA58E183A88A35 /* DocumentStatus.swift */,
+				EE0E84BAA3D7936EB9070ADFC16C0AFC /* IdentifiableLanguage.swift */,
+				681EAC36FDA1F9AA475A290B4D0B472E /* IdentifiableLanguages.swift */,
+				8B83D9A7D9130459240F3D56317C268C /* IdentifiedLanguage.swift */,
+				3E2376F767769685B1CD35541E527B1B /* IdentifiedLanguages.swift */,
+				D102320CA529AA12B3E456E62D84D3B9 /* InsecureConnection.swift */,
+				F047F3727C3BF49CA0BEC3DA10FFEE58 /* Language.swift */,
+				762BE8166DEE2268BE5830BE7A528F7D /* Languages.swift */,
+				E20A9DB4AB2005568E61ABC4C2021D02 /* LanguageTranslator.swift */,
+				42A638137346038A1071FF2E6DD9163E /* Shared.swift */,
+				6ABC14713FA3785D8871157D1A69430F /* Translation.swift */,
+				D7321DDBD6A9F61AF0E6F39871F3F478 /* TranslationModel.swift */,
+				9AA128EEAA2749D54FE623DF8E3E7B9B /* TranslationModels.swift */,
+				674EC97BE238A310A46C2BBD8BA55FD6 /* TranslationResult.swift */,
+				4C1EBF8F2D8281A113E3CB64FD730C64 /* Support Files */,
+			);
+			path = IBMWatsonLanguageTranslatorV3;
+			sourceTree = "<group>";
+		};
+		339FA210F80F517D26504FE6D96DBF8A /* Pods-WordReminder */ = {
+			isa = PBXGroup;
+			children = (
+				8D39403BF9BA19A0AC919B03A85904FA /* Pods-WordReminder.modulemap */,
+				29861B0961972F7485EC1900BB8999B9 /* Pods-WordReminder-acknowledgements.markdown */,
+				882EDE0E4573EB1EB82ACA0F93BD9FD9 /* Pods-WordReminder-acknowledgements.plist */,
+				05F871F7D5B10E3E2102CE355A0DA102 /* Pods-WordReminder-dummy.m */,
+				85EECA8B683491CE7C64ABF3D4CF8752 /* Pods-WordReminder-frameworks.sh */,
+				47E5C4FAC34AE1B7ABA42689220096FF /* Pods-WordReminder-Info.plist */,
+				9F6F5A1905639EF60A6E3D952B61B59A /* Pods-WordReminder-umbrella.h */,
+				5877AF40BDACBBAD53CB8743283CA7D9 /* Pods-WordReminder.debug.xcconfig */,
+				9849D37CCC99CA35D47A2AED108ED210 /* Pods-WordReminder.release.xcconfig */,
+			);
+			name = "Pods-WordReminder";
+			path = "Target Support Files/Pods-WordReminder";
+			sourceTree = "<group>";
+		};
+		3AA42B4E8EB35E5FB0C0656F039F7B03 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				339FA210F80F517D26504FE6D96DBF8A /* Pods-WordReminder */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4BDE46936B8ED7AF09FF89CBB7EF2E0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46ACAE2D7BB5CFD1E5306E8237994D96 /* IBMSwiftSDKCore.framework */,
+				4D40D2CB59269FA6AF2B68A91551BAA6 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C1EBF8F2D8281A113E3CB64FD730C64 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECBF85F4AE804692099E06922D4F05E1 /* IBMWatsonLanguageTranslatorV3.modulemap */,
+				5175B2F925474362F1B7BD9CB6E18A38 /* IBMWatsonLanguageTranslatorV3-dummy.m */,
+				8EE3477F3F43682F98A325BF1B9E4882 /* IBMWatsonLanguageTranslatorV3-Info.plist */,
+				BD915CBE5276790BD591B30A086646BB /* IBMWatsonLanguageTranslatorV3-prefix.pch */,
+				E60DDD042A0BFA12D5ECA562F74A6166 /* IBMWatsonLanguageTranslatorV3-umbrella.h */,
+				8FDADAA400D51AB1F9051607B4D6F6A8 /* IBMWatsonLanguageTranslatorV3.debug.xcconfig */,
+				5348DA4ED7F439EF529BE20FB50AD020 /* IBMWatsonLanguageTranslatorV3.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IBMWatsonLanguageTranslatorV3";
+			sourceTree = "<group>";
+		};
+		4D40D2CB59269FA6AF2B68A91551BAA6 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6B31B55948327FCE778860490F5EAC72 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		70CD901CB69BDB5264B67A0FDF75A07B /* IBMSwiftSDKCore */ = {
+			isa = PBXGroup;
+			children = (
+				29107FEFDCF7DC811202FE1AE8F22795 /* Authentication.swift */,
+				17A3160EEB94EC2FDDAB7D2DF020E104 /* CloudPakForDataAuthenticator.swift */,
+				733B2B22D49207DC67CB6A7C711392EE /* CodableExtensions.swift */,
+				0D5B70B7A3798388E7C585AB1C3AF507 /* ConfigBasedAuthenticatorFactory.swift */,
+				6E9DF47E5119713B8D74928E77266728 /* CredentialUtils.swift */,
+				CA937A9A773A42D3D1BCF8995BACC80B /* IAMAuthenticator.swift */,
+				696851FE529E2F6EA1C147D5728A09B6 /* InsecureConnection.swift */,
+				D7F75927ABF7237F4554F8A196690BA6 /* JSON.swift */,
+				23BAE4FEEA4096285AA19CD693FF66D4 /* JWT.swift */,
+				5AE5AF4B683EB8B21026D3D1D7815AAE /* MultipartFormData.swift */,
+				3B7E3D7E6FA231A5F578F41AA1FC4465 /* RestError.swift */,
+				3B82692D8D116AAD4DFE11BD6515217C /* RestRequest.swift */,
+				2DE43E4625F3199767AA2CE3ED5690AC /* RestResponse.swift */,
+				A6004519041EEE7DB4764476F309ED2F /* Support Files */,
+			);
+			path = IBMSwiftSDKCore;
+			sourceTree = "<group>";
+		};
+		A27A6107E83A2CC78C0517D45AA69C3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70CD901CB69BDB5264B67A0FDF75A07B /* IBMSwiftSDKCore */,
+				029C737763A4C6692D25B86A21E16975 /* IBMWatsonLanguageTranslatorV3 */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A6004519041EEE7DB4764476F309ED2F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAE3CD13D2793AFC67B6B3E08916F182 /* IBMSwiftSDKCore.modulemap */,
+				5B3DC0BCE2458BD676CB6C84BB0C1284 /* IBMSwiftSDKCore-dummy.m */,
+				2F408818939DF85D05765918849C3B0C /* IBMSwiftSDKCore-Info.plist */,
+				A57853DAC9DB287B456C62E20ED88CB4 /* IBMSwiftSDKCore-prefix.pch */,
+				68B698E39370A50CECAF0C81F59D04A4 /* IBMSwiftSDKCore-umbrella.h */,
+				10F2D7BA85C08E63CBC2813A779CFF79 /* IBMSwiftSDKCore.debug.xcconfig */,
+				3F2EDFE611E41664ACF0F407D2FFCA19 /* IBMSwiftSDKCore.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IBMSwiftSDKCore";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				4BDE46936B8ED7AF09FF89CBB7EF2E0A /* Frameworks */,
+				A27A6107E83A2CC78C0517D45AA69C3A /* Pods */,
+				EBD36AEA63B39EDA292E1103F9842825 /* Products */,
+				3AA42B4E8EB35E5FB0C0656F039F7B03 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		EBD36AEA63B39EDA292E1103F9842825 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7BC3B6AB1E4137B03F61EEDDCE61162 /* IBMSwiftSDKCore.framework */,
+				FA4CD253F8AFFDA1AECB557B3A947BF0 /* LanguageTranslator.framework */,
+				73865DADA70DA57473471B80B7716C9A /* Pods_WordReminder.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5F7FFA05F59CC8CF51AF629877A188A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18DDEC8005B616FFC0A7738DCEC48706 /* IBMSwiftSDKCore-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB7A3AF14BCDB682B8B7099D39C065E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65992668D051277A55EC8E2A18FB931B /* IBMWatsonLanguageTranslatorV3-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E305294300F9BEA2746E6612AAE5EBB1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF989293467C6F97EF43AF1F63BC340 /* Pods-WordReminder-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B2B724283F9BE15AC7375A6203787C69 /* IBMWatsonLanguageTranslatorV3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBFB3EE62D2E5EEFC61814FFDA623BC4 /* Build configuration list for PBXNativeTarget "IBMWatsonLanguageTranslatorV3" */;
+			buildPhases = (
+				BCB7A3AF14BCDB682B8B7099D39C065E /* Headers */,
+				E58A6B5ADA471267FA559580D7EB1FC7 /* Sources */,
+				579CB7596D00961B81C422D57DE83719 /* Frameworks */,
+				26FF7274A8FC33EC80C285CE46541299 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CA00DA126A508EA11884D9F03CCF6CB /* PBXTargetDependency */,
+			);
+			name = IBMWatsonLanguageTranslatorV3;
+			productName = IBMWatsonLanguageTranslatorV3;
+			productReference = FA4CD253F8AFFDA1AECB557B3A947BF0 /* LanguageTranslator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C212BBFAF6FC8270BF5BEF8057998E30 /* IBMSwiftSDKCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8843CC30CDE47856297265C0321AACBF /* Build configuration list for PBXNativeTarget "IBMSwiftSDKCore" */;
+			buildPhases = (
+				5F7FFA05F59CC8CF51AF629877A188A0 /* Headers */,
+				41794AAA12C46CD1E820B389596A05EE /* Sources */,
+				B02BC3EDD97C4B5C693165C5F2F86DB2 /* Frameworks */,
+				366DBA4C8EB69D4EC0F2468E071776F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IBMSwiftSDKCore;
+			productName = IBMSwiftSDKCore;
+			productReference = D7BC3B6AB1E4137B03F61EEDDCE61162 /* IBMSwiftSDKCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F04ABCA3657924DCBBBAF8A64A596049 /* Pods-WordReminder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 023EAF2F01A969677B73678AF08880FD /* Build configuration list for PBXNativeTarget "Pods-WordReminder" */;
+			buildPhases = (
+				E305294300F9BEA2746E6612AAE5EBB1 /* Headers */,
+				706DA8970B715E43BED0E785308B7F4F /* Sources */,
+				5DEC517DBCCBE062D49EA2B433AACBB3 /* Frameworks */,
+				E220678336B80087B2FF6F648BF0AB61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A49C90DF9344E488ED728402EBB5AEB /* PBXTargetDependency */,
+				FF66A8F26DA71AEE87B0445750C1275F /* PBXTargetDependency */,
+			);
+			name = "Pods-WordReminder";
+			productName = "Pods-WordReminder";
+			productReference = 73865DADA70DA57473471B80B7716C9A /* Pods_WordReminder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					C212BBFAF6FC8270BF5BEF8057998E30 = {
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				tr,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = EBD36AEA63B39EDA292E1103F9842825 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C212BBFAF6FC8270BF5BEF8057998E30 /* IBMSwiftSDKCore */,
+				B2B724283F9BE15AC7375A6203787C69 /* IBMWatsonLanguageTranslatorV3 */,
+				F04ABCA3657924DCBBBAF8A64A596049 /* Pods-WordReminder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26FF7274A8FC33EC80C285CE46541299 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		366DBA4C8EB69D4EC0F2468E071776F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E220678336B80087B2FF6F648BF0AB61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41794AAA12C46CD1E820B389596A05EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86D168DEEA9F1B0483E5D24C40382A93 /* Authentication.swift in Sources */,
+				59354C94A50B483675B4C9957DA0E761 /* CloudPakForDataAuthenticator.swift in Sources */,
+				B787B5FCD2787858439AF870C5E0B711 /* CodableExtensions.swift in Sources */,
+				891829B1B3A1FE3E3AEEB4517EFE6CA4 /* ConfigBasedAuthenticatorFactory.swift in Sources */,
+				FDFFB46B16962698755E53062E1F40FA /* CredentialUtils.swift in Sources */,
+				AA9560C73201DC9B6F2D888C54935890 /* IAMAuthenticator.swift in Sources */,
+				6463CF8A091A1004DA4C7D6D4C465050 /* IBMSwiftSDKCore-dummy.m in Sources */,
+				6FA1A1CCAC31B709EF1420192C3A2BE0 /* InsecureConnection.swift in Sources */,
+				D75AE0BE3046E4AE278FF5A098B5769A /* JSON.swift in Sources */,
+				785C4BE567B07F4844634B5D0BFA82CA /* JWT.swift in Sources */,
+				5E23AF5BA33DF108D10C3F0C29912CA1 /* MultipartFormData.swift in Sources */,
+				9A5A4C89A39379E1A3EB09F39B2453E3 /* RestError.swift in Sources */,
+				2AAD37619C70C3BAC535E8E96EFA0EE3 /* RestRequest.swift in Sources */,
+				80DF81F082D9C2AE5DA1E8F9FEE8DA80 /* RestResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		706DA8970B715E43BED0E785308B7F4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D71E6CFC19849ABFAABACD17FFFAD613 /* Pods-WordReminder-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E58A6B5ADA471267FA559580D7EB1FC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E8E23D04A09946D21940F4A11027FA0 /* DeleteModelResult.swift in Sources */,
+				4BEA7B89139FCD2BC124408842859A55 /* DocumentList.swift in Sources */,
+				A2BA09A91052C6026399ACCE45A6207B /* DocumentStatus.swift in Sources */,
+				2D0E115FFBA681D663D89F1E04D6C071 /* IBMWatsonLanguageTranslatorV3-dummy.m in Sources */,
+				7205FDE4DDC8C987A9CA3E7309C8177F /* IdentifiableLanguage.swift in Sources */,
+				8AE2E5E92206C6ACAA232325C784B3FA /* IdentifiableLanguages.swift in Sources */,
+				2EEFF088C1205E6C09F2F96F2DB51CEB /* IdentifiedLanguage.swift in Sources */,
+				7E921DB0F2F2CF67CB0350B3E0A1831C /* IdentifiedLanguages.swift in Sources */,
+				311419894F289D845C5537DA682EE17B /* InsecureConnection.swift in Sources */,
+				C8D48DC67D1EF83CC85E3EF245748E93 /* Language.swift in Sources */,
+				ACAF56A4EDCF29ADA55009B72D74CA68 /* Languages.swift in Sources */,
+				6AB5BD38EBAA70F49E5AB179DC9D5B6F /* LanguageTranslator.swift in Sources */,
+				0D605CB4A8E36A327F7B7CA94A5F1E16 /* Shared.swift in Sources */,
+				8008152C269A909A95FEB5AB079167E3 /* Translation.swift in Sources */,
+				76254230A99D8AE72320C62F3B06F7A8 /* TranslationModel.swift in Sources */,
+				D464F1179583F0E62471B9B88DFC4B75 /* TranslationModels.swift in Sources */,
+				A3491D7A07F44244D2158BCA31314E71 /* TranslationResult.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A49C90DF9344E488ED728402EBB5AEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMSwiftSDKCore;
+			target = C212BBFAF6FC8270BF5BEF8057998E30 /* IBMSwiftSDKCore */;
+			targetProxy = 4412D82486A07E508884765374DD798F /* PBXContainerItemProxy */;
+		};
+		9CA00DA126A508EA11884D9F03CCF6CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMSwiftSDKCore;
+			target = C212BBFAF6FC8270BF5BEF8057998E30 /* IBMSwiftSDKCore */;
+			targetProxy = DD4CA5F5FFB10F70B4D3F8F4B4FFADEE /* PBXContainerItemProxy */;
+		};
+		FF66A8F26DA71AEE87B0445750C1275F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMWatsonLanguageTranslatorV3;
+			target = B2B724283F9BE15AC7375A6203787C69 /* IBMWatsonLanguageTranslatorV3 */;
+			targetProxy = D60F445D10E8AF8D4961D399F22023EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		231F8F492CD1C0D004CE25F7CC9458DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5877AF40BDACBBAD53CB8743283CA7D9 /* Pods-WordReminder.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WordReminder/Pods-WordReminder-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WordReminder/Pods-WordReminder.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		747BF09E4BD0722F6F9AF2C6E8F8E859 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10F2D7BA85C08E63CBC2813A779CFF79 /* IBMSwiftSDKCore.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMSwiftSDKCore/IBMSwiftSDKCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMSwiftSDKCore/IBMSwiftSDKCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMSwiftSDKCore/IBMSwiftSDKCore.modulemap";
+				PRODUCT_MODULE_NAME = IBMSwiftSDKCore;
+				PRODUCT_NAME = IBMSwiftSDKCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9230373B9B762257334507E7A96F2E9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FDADAA400D51AB1F9051607B4D6F6A8 /* IBMWatsonLanguageTranslatorV3.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonLanguageTranslatorV3/IBMWatsonLanguageTranslatorV3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonLanguageTranslatorV3/IBMWatsonLanguageTranslatorV3-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonLanguageTranslatorV3/IBMWatsonLanguageTranslatorV3.modulemap";
+				PRODUCT_MODULE_NAME = LanguageTranslator;
+				PRODUCT_NAME = LanguageTranslator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BE4350412F6C5E7A2FF127ADF14C7A64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9849D37CCC99CA35D47A2AED108ED210 /* Pods-WordReminder.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WordReminder/Pods-WordReminder-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WordReminder/Pods-WordReminder.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		EAAE5DE3BB9F5CDF26D60DB89FF4670D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5348DA4ED7F439EF529BE20FB50AD020 /* IBMWatsonLanguageTranslatorV3.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonLanguageTranslatorV3/IBMWatsonLanguageTranslatorV3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonLanguageTranslatorV3/IBMWatsonLanguageTranslatorV3-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonLanguageTranslatorV3/IBMWatsonLanguageTranslatorV3.modulemap";
+				PRODUCT_MODULE_NAME = LanguageTranslator;
+				PRODUCT_NAME = LanguageTranslator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FC2F8F212BC6738739291A2F284A13A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F2EDFE611E41664ACF0F407D2FFCA19 /* IBMSwiftSDKCore.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMSwiftSDKCore/IBMSwiftSDKCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMSwiftSDKCore/IBMSwiftSDKCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMSwiftSDKCore/IBMSwiftSDKCore.modulemap";
+				PRODUCT_MODULE_NAME = IBMSwiftSDKCore;
+				PRODUCT_NAME = IBMSwiftSDKCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		023EAF2F01A969677B73678AF08880FD /* Build configuration list for PBXNativeTarget "Pods-WordReminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				231F8F492CD1C0D004CE25F7CC9458DE /* Debug */,
+				BE4350412F6C5E7A2FF127ADF14C7A64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */,
+				C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8843CC30CDE47856297265C0321AACBF /* Build configuration list for PBXNativeTarget "IBMSwiftSDKCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				747BF09E4BD0722F6F9AF2C6E8F8E859 /* Debug */,
+				FC2F8F212BC6738739291A2F284A13A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBFB3EE62D2E5EEFC61814FFDA623BC4 /* Build configuration list for PBXNativeTarget "IBMWatsonLanguageTranslatorV3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9230373B9B762257334507E7A96F2E9A /* Debug */,
+				EAAE5DE3BB9F5CDF26D60DB89FF4670D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

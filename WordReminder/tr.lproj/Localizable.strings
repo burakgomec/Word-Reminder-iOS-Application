@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  WordReminder
+
+  Created by Burak on 21.07.2021.
+  
+*/
+
+"OK" = "Tamam";
+"Delete" = "Sil";
+"Cancel" = "Vazgeç";
+"Error" = "Hata";
+"Select second language" = "İkinci dili seçiniz";
+"English" = "İngilizce"; //?
+"Turkish" = "Türkçe";
+"Choose a language" = "Bir dil seçiniz";
+"Translate From:" = "Şu dilden çevir:";
+"Translate To:" = "Şu dile çevir:";
+"Star a translation to see it here" = "Kaydedilen çevirileri burada görmek için bir çeviriye yıldız ekleyin";
+"About" = "Hakkında";
+"Notifications" = "Bildirimler";
+"Feedback" = "Geri Bildirim";
+"Clear Translation History" = "Çeviri Geçmişini Temizle";
+"All translation history will be cleared from this application" = "Tüm çeviri geçmişi bu uygulamadan silinecek";

@@ -1,0 +1,57 @@
+
+/* Class = "UIButton"; normalTitle = "English"; ObjectID = "0x6-v1-t93"; */
+"0x6-v1-t93.normalTitle" = "İngilizce";
+
+/* Class = "UINavigationItem"; title = "About"; ObjectID = "48e-Ys-bN9"; */
+"48e-Ys-bN9.title" = "Hakkında";
+
+/* Class = "UILabel"; text = "W2"; ObjectID = "4GR-wH-3Tq"; */
+"4GR-wH-3Tq.text" = "W2";
+
+/* Class = "UINavigationItem"; title = "Saved"; ObjectID = "5If-ny-Xw9"; */
+"5If-ny-Xw9.title" = "Kaydedilenler";
+
+/* Class = "UITabBarItem"; title = "Search"; ObjectID = "Bd3-jz-JEj"; */
+"Bd3-jz-JEj.title" = "Arayın";
+
+/* Class = "UIButton"; normalTitle = "Turkish"; ObjectID = "Bop-A2-6yn"; */
+"Bop-A2-6yn.normalTitle" = "Türkçe";
+
+/* Class = "UITextView"; text = "Bu uygulama açık kaynak kodlu olarak geliştirilmiştir.Uygulamada IBM Watson Language Translator servisinin ücretsiz planı kullanılmıştır. Bu yüzden çeviri hizmeti ayda toplam 1,000,000 karakter ve sunucuya atılan istek sayısına göre IBM tarafından sınırlandırılmıştır. Aşağıda verilen link üzerinden uygulamanın tüm kaynak kodlarına ulaşabilirsiniz.\\n\\nUygulamaya Github ve Google Play üzerinden yıldız vererek destekleyebilir, öneriler sunabilirsiniz.\\n\\nIcons made by www.freepik.com\"\\n\\nOur preview images were created using 'Previewed' at previewed.app\\n\\nGeliştirici: Burak GÖMEÇ"; ObjectID = "IXZ-Qt-ZYa"; */
+"IXZ-Qt-ZYa.text" = "Bu uygulama açık kaynak kodlu olarak geliştirilmiştir.Uygulamada IBM Watson Language Translator servisinin ücretsiz planı kullanılmıştır. Bu yüzden çeviri hizmeti ayda toplam 1,000,000 karakter ve sunucuya atılan istek sayısına göre IBM tarafından sınırlandırılmıştır. Aşağıda verilen link üzerinden uygulamanın tüm kaynak kodlarına ulaşabilirsiniz.\\n\\nUygulamaya Github ve Google Play üzerinden yıldız vererek destekleyebilir, öneriler sunabilirsiniz.\\n\\nIcons made by www.freepik.com\"\\n\\nOur preview images were created using 'Previewed' at previewed.app\\n\\nGeliştirici: Burak GÖMEÇ";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "TeJ-si-u7n"; */
+"TeJ-si-u7n.title" = "Ayarlar";
+
+/* Class = "UILabel"; text = "English"; ObjectID = "aqq-K1-wsp"; */
+"aqq-K1-wsp.text" = "İngilizce";
+
+/* Class = "UILabel"; text = "Turkish"; ObjectID = "b0z-hZ-Z9Q"; */
+"b0z-hZ-Z9Q.text" = "Türkçe";
+
+/* Class = "UITextView"; accessibilityHint = "Metin Giriniz"; ObjectID = "bex-CP-mTF"; */
+"bex-CP-mTF.accessibilityHint" = "Metin Giriniz";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "fNk-Nu-nY8"; */
+"fNk-Nu-nY8.title" = "Ayarlar";
+
+/* Class = "UINavigationItem"; title = "Word Reminder"; ObjectID = "fOW-LN-mVl"; */
+"fOW-LN-mVl.title" = "Word Reminder";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "gyW-K0-izW"; */
+"gyW-K0-izW.placeholder" = "Ara";
+
+/* Class = "UILabel"; text = "W1"; ObjectID = "h9d-5e-Wc4"; */
+"h9d-5e-Wc4.text" = "W1";
+
+/* Class = "UIButton"; normalTitle = "CLEAR TRANSLATION HISTORY"; ObjectID = "oMM-ga-KbP"; */
+"oMM-ga-KbP.normalTitle" = "ÇEVİRİ GEÇMİŞİNİ TEMİZLE";
+
+/* Class = "UILabel"; text = "INFORMATION"; ObjectID = "ols-YO-ngX"; */
+"ols-YO-ngX.text" = "BİLGİLENDİRME";
+
+/* Class = "UITabBarItem"; title = "Saved"; ObjectID = "uXz-54-Blw"; */
+"uXz-54-Blw.title" = "Kaydedilenler";
+
+/* Class = "UILabel"; text = "Translate from:"; ObjectID = "vei-VF-Day"; */
+"vei-VF-Day.text" = "Şu dilden çevir:";

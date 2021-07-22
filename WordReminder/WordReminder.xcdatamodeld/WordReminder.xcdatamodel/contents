@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20E232" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Words" representedClassName="Words" syncable="YES" codeGenerationType="class">
+        <attribute name="code1" optional="YES" attributeType="String"/>
+        <attribute name="code2" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="word1" optional="YES" attributeType="String"/>
+        <attribute name="word2" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Words" positionX="-42270.44921875" positionY="28623.39453125" width="128" height="118"/>
+    </elements>
+</model>

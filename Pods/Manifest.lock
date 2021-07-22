@@ -1,0 +1,20 @@
+PODS:
+  - IBMSwiftSDKCore (1.0.0)
+  - IBMWatsonLanguageTranslatorV3 (4.1.0):
+    - IBMSwiftSDKCore (~> 1.0.0)
+
+DEPENDENCIES:
+  - IBMWatsonLanguageTranslatorV3 (~> 4.1.0)
+
+SPEC REPOS:
+  trunk:
+    - IBMSwiftSDKCore
+    - IBMWatsonLanguageTranslatorV3
+
+SPEC CHECKSUMS:
+  IBMSwiftSDKCore: 54ad77b03a4d27b218ba514580197db3b89a96ca
+  IBMWatsonLanguageTranslatorV3: db22fa52cba6efeb054526204563281112615129
+
+PODFILE CHECKSUM: ecc4531d626b8b38e24874bfb91095c346826302
+
+COCOAPODS: 1.10.1

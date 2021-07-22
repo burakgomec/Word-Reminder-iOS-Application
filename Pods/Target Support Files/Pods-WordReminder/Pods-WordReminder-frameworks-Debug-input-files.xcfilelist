@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-WordReminder/Pods-WordReminder-frameworks.sh
+${BUILT_PRODUCTS_DIR}/IBMSwiftSDKCore/IBMSwiftSDKCore.framework
+${BUILT_PRODUCTS_DIR}/IBMWatsonLanguageTranslatorV3/LanguageTranslator.framework
