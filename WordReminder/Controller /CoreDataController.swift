@@ -37,7 +37,6 @@ class CoreDataController {
     func getWords(context: NSManagedObjectContext){
         objectContext = context
         let fetchRequest = NSFetchRequest<Words>(entityName: "Words")
-        
         do{
             let savedWords = try context.fetch(fetchRequest)
             if savedWords.isEmpty {
@@ -57,8 +56,9 @@ class CoreDataController {
     
     func deleteWordWithUUID(uuid: UUID){
         let fetchRequest = NSFetchRequest<Words>(entityName: "Words")
-        //,uuid as CVarArg
-        fetchRequest.predicate = NSPredicate(format: "id == \(uuid)")
+    
+        fetchRequest.predicate = NSPredicate(format: "id == %@", uuid as CVarArg)
+         
         do{
             let matchingWords = try objectContext?.fetch(fetchRequest)
             if matchingWords != nil{
@@ -72,28 +72,42 @@ class CoreDataController {
                     print("Could not save. \(error), \(error.userInfo)")
                 }
             }
-       
         }
         catch let error as NSError{
             print("Could not fetch. \(error), \(error.userInfo)")
         }
         
-        /*
-        print(uuid)
-        for i in 0..<Constants.savedWordsArray.count{
-            if Constants.savedWordsArray[i].id == uuid{
-                Constants.savedWordsArray.remove(at: 0)
-            }
+        Constants.savedWordsArray.removeAll{ word in
+            return word.id == uuid
         }
-        print(Constants.savedWordsArray.count)
-         */
         delegate?.didFinishUpdates(finished: true)
     }
     
     
     func deleteWordWithModel(word1: String, code1: String, code2: String){
         let fetchRequest = NSFetchRequest<Words>(entityName: "Words")
+        do{
+            let savedWords = try objectContext!.fetch(fetchRequest)
+            for savedWord in savedWords{
+                if savedWord.word1 == word1 && savedWord.code1 == code1 && savedWord.code2 == code2{
+                    objectContext?.delete(savedWord)
+                }
+                do {
+                    try objectContext?.save()
+                }
+                catch let error as NSError{
+                    print("Could not save. \(error), \(error.userInfo)")
+                }
+            }
+        }
+        catch let error as NSError{
+            print("Could not save. \(error), \(error.userInfo)")
+        }
         
+        Constants.savedWordsArray.removeAll { word in
+            return word.word1 == word1 && word.code1 == code1 && word.code2 == code2
+        }
+        delegate?.didFinishUpdates(finished: true)
     }
     
     
@@ -132,6 +146,10 @@ class CoreDataController {
         }
         return nil
     }
+    
+    
+    
+    
     
     
     private init(){}

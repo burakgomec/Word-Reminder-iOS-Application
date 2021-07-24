@@ -31,7 +31,7 @@ class SavedCell: UITableViewCell{
 
     @objc func deleteTranslatedWord(){
         guard let index = getIndexPath()?.section else{return}
-        //CoreDataController.shared.deleteWordWithUUID(uuid: Constants.savedWordsArray[index].id)
+        CoreDataController.shared.deleteWordWithUUID(uuid: Constants.savedWordsArray[index].id)
     }
     
     

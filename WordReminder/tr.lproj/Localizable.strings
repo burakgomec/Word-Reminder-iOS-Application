@@ -1,4 +1,4 @@
-/* 
+/*
   Localizable.strings
   WordReminder
 
@@ -11,8 +11,6 @@
 "Cancel" = "Vazgeç";
 "Error" = "Hata";
 "Select second language" = "İkinci dili seçiniz";
-"English" = "İngilizce"; //?
-"Turkish" = "Türkçe";
 "Choose a language" = "Bir dil seçiniz";
 "Translate From:" = "Şu dilden çevir:";
 "Translate To:" = "Şu dile çevir:";
@@ -22,3 +20,58 @@
 "Feedback" = "Geri Bildirim";
 "Clear Translation History" = "Çeviri Geçmişini Temizle";
 "All translation history will be cleared from this application" = "Tüm çeviri geçmişi bu uygulamadan silinecek";
+"Turkish" = "Türkçe";
+"English" = "İngilizce";
+"German" = "Almanca";
+"French" = "Fransızca";
+"French-Canada" = "Fransızca-Kanada";
+"Hindi" = "Hintçe";
+"Hebrew" = "İbranice";
+"Portuguese" = "Portekizce";
+"Traditional Chinese" = "Geleneksel Çince";
+"Croatian" = "Hırvatça";
+"Hungarian" = "Macarca";
+"Montenegrin" = "Karadağca";
+"Indonesian" = "Endonezya Dili";
+"Italian" = "İtalyanca";
+"Simplified Chinese" = "Basitleştirilmiş Çince";
+"Japanese" = "Japonca";
+"Dutch" = "Felemenkçe";
+"Finnish" = "Fince";
+"Irish" = "İrlandaca";
+"Gujarati" = "Guceratça";
+"Polish" = "Lehçe";
+"Danish" = "Danca";
+"Lithuanian" = "Litvanca";
+"Latvian" = "Letonca";
+"Ukrainian" = "Ukraynaca";
+"Urdu" = "Urduca";
+"Malayalam" = "Malayalamca";
+"Malay" = "Malayca";
+"Maltese" = "Malta Dili";
+"Greek" = "Yunanca";
+"Spanish" = "İspanyolca";
+"Estonian" = "Estonyaca";
+"Norwegian" = "Norveççe";
+"Vietnamese" = "Vietnamca";
+"Nepali" = "Nepalce";
+"Romanian" = "Romence";
+"Russian" = "Rusça";
+"Bulgarian" = "Bulgarca";
+"Bengali" = "Bengalce";
+"Bosnian" = "Boşnakça";
+"Slovakian" = "Slovakça";
+"Slovenian" = "Slovence";
+"Serbian" = "Sırpça";
+"Korean" = "Korece";
+"Swedish" = "İsveççe";
+"Tamil" = "Tamil";
+"Czech" = "Çekçe";
+"Telugu" = "Telugu Dili";
+"Thai" = "Tay Dili";
+"Welsh" = "Galce";
+"Catalan" = "Katalanca";
+"Basque" = "Baskça";
+
+
+"Word Reminder is an open source translation reminder application. \n\nYou can access the entire source code of the application via the link below.\n\nYou can support my development of independent applications and offer suggestions by giving stars to the application on the App Store and Github. \n\nIcons made by www.freepik.com \n\nDeveloper: Burak GÖMEÇ" = "Word Reminder açık kaynak kodlu bir çeviri hatırlatıcısı uygulamasıdır.\n\nAşağıda yer alan link üzerinden uygulamanın tüm kaynak koduna erişebilirsiniz.\n\nUygulamaya App Store ve Github üzerinden yıldız vererek bağımsız uygulamalar geliştirmemi destekleyebilir, öneriler sunabilirsiniz.\n\nIcons made by www.freepik.com \n\nDeveloper: Burak GÖMEÇ";

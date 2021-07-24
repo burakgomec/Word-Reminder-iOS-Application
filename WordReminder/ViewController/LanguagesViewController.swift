@@ -51,7 +51,7 @@ class LanguagesViewController: UIViewController {
                     let value = Constants.modelDictionary[code]
                     let languages = value?.components(separatedBy: ",")
                     for language in languages!{
-                        let dictionary = Dictionary(uniqueKeysWithValues: Constants.languagesDictionary.map({ ($1, $0)})) //reverse dictionary
+                        let dictionary = Dictionary(uniqueKeysWithValues: Constants.languagesDictionary.map({ ($1, $0)})) //Reverse dictionary
                         let regexLanguage = dictionary[language]
                         languagesArray.append(regexLanguage!)
                     }
@@ -212,20 +212,16 @@ extension LanguagesViewController : UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if control && bufferSegueText == "1"{ //?
-            print("1")
+        if control && bufferSegueText == "1"{
             delegate?.wordReady(language: Constants.languages[indexPath.row], languageNumber: languageNumber!)
         }
         else if control && bufferSegueText == "2"{
-            print("2, \(indexPath.row), size:\(bufferTableArray.count)")
             delegate?.wordReady(language: self.languagesArray[indexPath.row], languageNumber: languageNumber!)
         }
         else if !control && bufferSegueText == "1"{
-            print("3")
-            delegate?.wordReady(language: self.bufferTableArray[indexPath.row], languageNumber: languageNumber!) 
+            delegate?.wordReady(language: self.bufferTableArray[indexPath.row], languageNumber: languageNumber!)
         }
         else{
-            print("4")
             delegate?.wordReady(language: self.bufferTableArray[indexPath.row], languageNumber: languageNumber!)
         }
         self.dismiss(animated: true)

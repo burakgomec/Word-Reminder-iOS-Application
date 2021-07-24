@@ -33,7 +33,6 @@ class SavedViewController: UIViewController, UITableViewDelegate {
         view.addSubview(label)
         if Constants.savedWordsArray.isEmpty {
             label.isHidden = false
-            //recordedTableView.isHidden = true
         }
         else{
             label.isHidden = true
@@ -44,8 +43,9 @@ class SavedViewController: UIViewController, UITableViewDelegate {
         let label = UILabel()
         label.text = "Star a translation to see it here".localizeString()
         label.textAlignment = .center
-        label.textColor = .gray
-        label.font = UIFont(name: "Arial", size:19)
+        label.textColor = UIColor.Custom.labelColor
+    
+        label.font = UIFont(name: "NotoSansKannada-Bold", size:18)
         return label
     }()
 }
@@ -80,18 +80,20 @@ extension SavedViewController : UpdatesDelegate{
     
     func listenedArraySize(cleared: Bool) {
         if cleared{
+            self.recordedTableView.reloadData()
             label.isHidden = false
-            //self.recordedTableView.isHidden = true ?
         }
     }
     
     func didFinishUpdates(finished: Bool) {
         if finished{
             self.recordedTableView.reloadData()
-            if !label.isHidden {
+            if Constants.savedWordsArray.count == 0 {
+                label.isHidden = false
+            }
+            else if !label.isHidden{
                 label.isHidden = true
             }
-
         }
     }
     

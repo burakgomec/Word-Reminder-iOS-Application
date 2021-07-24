@@ -13,10 +13,9 @@ class Constants  {
     
     static var delegate : UpdatesDelegate?
    
-    static let languages : [String] = ["Türkçe","İngilizce","Almanca","Fransızca","Fransızca-Kanada","Hintçe","İbranice","Portekizce","Geleneksel Çince","Hırvatça","Macarca","Karadağca","Endonezya Dili","İtalyanca","Basitleştirilmiş Çince","Japonca","Felemenkçe","Fince","İrlandaca","Guceratça","Lehçe","Danca","Litvanca","Letonca","Ukraynaca","Urduca","Malayalamca","Malayca",
-        "Malta Dili","Yunanca","İspanyolca","Estonyaca","Norveççe","Vietnamca","Nepalce","Romence","Rusça","Bulgarca","Bengalce","Boşnakça","Slovakça","Slovence","Sırpça",
-        "Korece","İsveççe","Tamil","Çekçe","Telugu Dili","Tay Dili","Galce","Katalanca","Baskça"]
-    
+    static let languages : [String] = ["English".localizeString(),"Turkish".localizeString(),"German".localizeString(),"French".localizeString(),"French-Canada".localizeString(),"Hindi".localizeString(),"Hebrew".localizeString(),"Portuguese".localizeString(),"Traditional Chinese".localizeString(),"Croatian".localizeString(),"Hungarian".localizeString(),"Montenegrin".localizeString(),"Indonesian".localizeString(),"Italian".localizeString(),"Simplified Chinese".localizeString(),"Japanese".localizeString(),"Dutch".localizeString(),"Finnish".localizeString(),"Irish".localizeString(),"Gujarati".localizeString(),"Polish".localizeString(),"Danish".localizeString(),"Lithuanian".localizeString(),"Latvian".localizeString(),"Ukrainian".localizeString(),"Urdu".localizeString(),"Malayalam".localizeString(),"Malay".localizeString(),
+                                       "Maltese".localizeString(),"Greek".localizeString(),"Spanish".localizeString(),"Estonian".localizeString(),"Norwegian".localizeString(),"Vietnamese".localizeString(),"Nepali".localizeString(),"Romanian".localizeString(),"Russian".localizeString(),"Bulgarian".localizeString(),"Bengali".localizeString(),"Bosnian".localizeString(),"Slovakian".localizeString(),"Slovenian".localizeString(),"Serbian".localizeString(),
+                                       "Korean".localizeString(),"Swedish".localizeString(),"Tamil".localizeString(),"Czech".localizeString(),"Telugu".localizeString(),"Thai".localizeString(),"Welsh".localizeString(),"Catalan".localizeString(),"Basque".localizeString()]
     
     //Ibm translation language models
     static let modelDictionary = ["en":"tr,de,fr,fr-CA,it,pt,zh-TW,hr,hu,cnr,id,zh,ja,nl,fi,ga,gu,pl,da,lt,lv,uk,ur,ml,ms,mt,el,es,et,nb,vi,ne,ro,ru,bg,bn,bs,sk,sl,sr,ko,sv,ta,cs,te,th,he,hi,cy"
@@ -54,69 +53,63 @@ class Constants  {
                                   "ru":"en","bg":"en","bn":"en","bs":"en","sk":"en","sl":"en","sr":"en","ko":"en","sv":"en","ta":"en","cs":"en","te":"en","th":"en",
                                   "cy":"en","ca":"es","eu":"es","de":"fr,it,en","es":"fr,eu,en,ca","it":"en,de","fr":"en,de,es"]
 
-    
-    static let languagesCodes : [String] = ["tr","en","de","fr","fr-CA","hi","he","pt","zh-TW","hr","hu","cnr","id","it","zh","ja","nl","fi","ga","gu","pl","da","lt","lv","uk","ur","ml","ms",
-        "mt","el","es","et","nb","vi","ne","ro","ru","bg","bn","bs","sk","sl","sr",
-        "ko","sv","ta","cs","te","th","cy","ca","eu"]
- 
+
+    static let languagesDictionary : [String : String] = ["English".localizeString():"en","Turkish".localizeString():"tr","German".localizeString():"de" ,"French".localizeString():"fr","French-Canada".localizeString():"fr-CA"
+                                                          ,"Hindi".localizeString():"hi",
+                                                          "Hebrew".localizeString():"he"
+                                                          ,"Portuguese".localizeString():"pt" ,
+                                                          "Traditional Chinese".localizeString():"zh-TW"
+                                                          ,"Croatian".localizeString():"hr",
+                                                          "Hungarian".localizeString():"hu",
+                                                          "Montenegrin".localizeString():"cnr",
+                                                          "Indonesian".localizeString():"id",
+                                                          "Italian".localizeString():"it",
+                                                          "Simplified Chinese".localizeString():"zh",
+                                                          "Japanese".localizeString():"ja",
+                                                          "Dutch".localizeString():"nl",
+                                                          "Finnish".localizeString():"fi",
+                                                          "Irish".localizeString():"ga",
+                                                          "Gujarati".localizeString():"gu",
+                                                          "Polish".localizeString():"pl",
+                                                          "Danish".localizeString():"da",
+                                                          "Lithuanian".localizeString():"lt",
+                                                          "Latvian".localizeString():"lv",
+                                                          "Ukrainian".localizeString():"uk",
+                                                          "Urdu".localizeString():"ur",
+                                                          "Malayalam".localizeString():"ml",
+                                                          "Malay".localizeString():"ms",
+                                                          "Maltese".localizeString():"mt",
+                                                          "Greek".localizeString():"el",
+                                                          "Spanish".localizeString():"es",
+                                                          "Estonian".localizeString():"et",
+                                                          "Norwegian".localizeString():"nb",
+                                                          "Vietnamese".localizeString():"vi",
+                                                          "Nepali".localizeString():"ne",
+                                                          "Romanian".localizeString():"ro",
+                                                          "Russian".localizeString():"ru",
+                                                          "Bulgarian".localizeString():"bg",
+                                                          "Bengali".localizeString():"bn",
+                                                          "Bosnian".localizeString():"bs",
+                                                          "Slovakian".localizeString():"sk",
+                                                          "Slovenian".localizeString():"sl",
+                                                          "Serbian".localizeString():"sr",
+                                                          "Korean".localizeString():"ko",
+                                                          "Swedish".localizeString():"sv",
+                                                          "Tamil".localizeString():"ta",
+                                                          "Czech".localizeString():"cs",
+                                                          "Telugu".localizeString():"te",
+                                                          "Thai".localizeString():"th",
+                                                          "Welsh".localizeString():"cy",
+                                                          "Catalan".localizeString():"ca"
+                                                           ,"Basque".localizeString():"eu"]
     
     static var savedWordsArray : [TranslatedWord] = [] {
         didSet{
             if savedWordsArray.count == 0{
                 delegate?.listenedArraySize(cleared: true)
             }
-
         }
     }
-    
-    static let languagesDictionary : [String : String] = ["Türkçe":"tr","İngilizce":"en","Almanca":"de" ,"Fransızca":"fr","Fransızca-Kanada":"fr-CA"
-                                                          ,"Hintçe":"hi",
-                                                          "İbranice":"he"
-                                                          ,"Portekizce":"pt" ,
-                                                          "Geleneksel Çince":"zh-TW"
-                                                          ,"Hırvatça":"hr",
-                                                           "Macarca":"hu",
-                                                           "Karadağca":"cnr",
-                                                           "Endonezya Dili":"id",
-                                                           "İtalyanca":"it",
-                                                           "Basitleştirilmiş Çince":"zh",
-                                                           "Japonca":"ja",
-                                                           "Felemenkçe":"nl",
-                                                           "Fince":"fi",
-                                                           "İrlandaca":"ga",
-                                                           "Guceratça":"gu",
-                                                           "Lehçe":"pl",
-                                                           "Danca":"da",
-                                                           "Litvanca":"lt",
-                                                           "Letonca":"lv",
-                                                           "Ukraynaca":"uk",
-                                                           "Urduca":"ur",
-                                                           "Malayalamca":"ml",
-                                                           "Malayca":"ms",
-                                                           "Malta Dili":"mt",
-                                                           "Yunanca":"el",
-                                                           "İspanyolca":"es",
-                                                           "Estonyaca":"et",
-                                                           "Norveççe":"nb",
-                                                           "Vietnamca":"vi",
-                                                           "Nepalce":"ne",
-                                                           "Romence":"ro",
-                                                           "Rusça":"ru",
-                                                           "Bulgarca":"bg",
-                                                           "Bengalce":"bn",
-                                                           "Boşnakça":"bs",
-                                                           "Slovakça":"sk",
-                                                           "Slovence":"sl",
-                                                           "Sırpça":"sr",
-                                                           "Korece":"ko",
-                                                           "İsveççe":"sv",
-                                                           "Tamil":"ta",
-                                                           "Çekçe":"cs",
-                                                           "Telugu Dili":"te",
-                                                           "Tay Dili":"th",
-                                                           "Galce":"cy",
-                                                           "Katalanca":"ca"
-                                                           ,"Baskça":"eu"]
     
         
 

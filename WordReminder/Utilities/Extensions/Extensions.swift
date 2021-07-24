@@ -50,31 +50,26 @@ extension UIViewController{
 extension UIColor{
     struct Custom {
         static var backgroundBlack: UIColor{
-            if #available(iOS 13, *) {
                 return UIColor.init { (trait) -> UIColor in
                     return trait.userInterfaceStyle == .dark ? UIColor.black : UIColor.tertiarySystemGroupedBackground
                 }
-            }
-            return UIColor.white //will change
         }
-        
-        
         static var backgroundGrayWhite: UIColor{
-            if #available(iOS 13, *){
                 return UIColor.init { (trait) -> UIColor in //3-4
                     return trait.userInterfaceStyle == .dark ? UIColor.systemGray4.withAlphaComponent(0.3) : UIColor.white
                 }
-            }
-            return UIColor.white//will change
         }
         static var borderColor : UIColor{
-            if #available(iOS 13, *){
                 return UIColor.init { (trait) -> UIColor in
                     return trait.userInterfaceStyle == .dark ? UIColor.white.withAlphaComponent(0.3) : UIColor.black.withAlphaComponent(1)
                 }
-            }
-            return UIColor.red
         }
+        static var labelColor : UIColor{
+                return UIColor.init{ (trait) ->  UIColor in
+                    return trait.userInterfaceStyle == .dark ? .white.withAlphaComponent(0.9) : .black.withAlphaComponent(0.45)
+                }
+        }
+
     }
 }
 

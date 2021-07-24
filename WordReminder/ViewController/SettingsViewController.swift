@@ -47,11 +47,7 @@ extension SettingsViewController : UITableViewDelegate,UITableViewDataSource{
         let cell = UITableViewCell()
         cell.textLabel?.text = self.settingRowArray[indexPath.row]
         cell.accessoryType = .disclosureIndicator
-        if #available(iOS 13.0, *) {
-            cell.backgroundColor = .tertiarySystemBackground
-        } else {
-            // Fallback on earlier versions
-        }
+        cell.backgroundColor = .tertiarySystemBackground
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

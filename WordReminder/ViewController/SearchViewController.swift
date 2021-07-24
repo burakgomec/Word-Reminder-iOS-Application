@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SearchViewController: UIViewController,LanguageDelegate { 
+class SearchViewController: UIViewController,LanguageDelegate {
     
     @IBOutlet weak var firstLangButton: UIButton!
     @IBOutlet weak var secondLangButton: UIButton!
@@ -46,8 +46,8 @@ class SearchViewController: UIViewController,LanguageDelegate {
         
         code1 = defaultCode1 ?? "en"
         code2 = defaultCode2 ?? "tr"
-        lang1 = defaultLanguage1 ?? "English".localizeString()
-        lang2 = defaultLanguage2 ?? "Turkish".localizeString()
+        lang1 = defaultLanguage1?.localizeString() ?? "English".localizeString()
+        lang2 = defaultLanguage2?.localizeString() ?? "Turkish".localizeString()
         
         firstLangButton.setTitle(lang1, for: .normal)
         secondLangButton.setTitle(lang2, for: .normal)
@@ -80,13 +80,13 @@ class SearchViewController: UIViewController,LanguageDelegate {
     }
     
     func prepareForViewAnimation(){
-        UIView.animate(withDuration: 0.5, delay: 0.10, options: UIView.AnimationOptions.curveLinear, animations: {
+        UIView.animate(withDuration: 0.4, delay: 0.10, options: UIView.AnimationOptions.curveLinear, animations: {
             self.languagesStackView.frame.origin.x += self.view.bounds.width
         }, completion: nil)
-        UIView.animate(withDuration: 0.5, delay: 0.20, options: UIView.AnimationOptions.curveLinear, animations: {
+        UIView.animate(withDuration: 0.4, delay: 0.20, options: UIView.AnimationOptions.curveLinear, animations: {
             self.firstGroupStackView.frame.origin.x += self.view.bounds.width
         }, completion: nil)
-        UIView.animate(withDuration: 0.5, delay: 0.40, options: UIView.AnimationOptions.curveLinear, animations: {
+        UIView.animate(withDuration: 0.4, delay: 0.40, options: UIView.AnimationOptions.curveLinear, animations: {
             self.secondGroupStackView.frame.origin.x += self.view.bounds.width
         }, completion: nil)
     }
@@ -135,10 +135,38 @@ class SearchViewController: UIViewController,LanguageDelegate {
             secondLangButton.setTitle(lang2, for: .normal)
             firstLangLabel.text = lang1
             secondLangLabel.text = lang2
+            
             guard let text = secondTextView.text else { return }
             if text != ""{
                 firstTextView.text = text
-                getTranslateResult(word: text, code1: code1!, code2: code2!)
+                word1 = text
+                
+                let result = CoreDataController.shared.checkWord(word1:text, code1: code1!, code2: code2!)
+            
+                if (starButton.imageView?.tag == 1){ //Starred translation
+                    if result == nil{
+                        starButton.imageView?.tag = 0
+                        setStarImage()
+                        getTranslateResult(word: text, code1: code1!, code2: code2!)
+                    }
+                    else {
+                        self.secondTextView.text = result
+                        self.word2 = result
+                    }
+                }
+                else { //Not-starred translation
+                    if result == nil{
+                        starButton.imageView?.tag = 0
+                        setStarImage()
+                        getTranslateResult(word: text, code1: code1!, code2: code2!)
+                    }
+                    else {
+                        self.secondTextView.text = result
+                        self.word2 = result
+                        setStarFillImage()
+                        self.starButton.imageView?.tag = 1
+                    }
+                }
             }
         }
     }
@@ -181,7 +209,6 @@ class SearchViewController: UIViewController,LanguageDelegate {
             else{
                 setStarImage()
                 starButton.imageView?.tag = 0
-                //Delete from core date operation....
                 CoreDataController.shared.deleteWordWithModel(word1: word1!, code1: code1!, code2: code2!)
             }
         }
@@ -190,7 +217,7 @@ class SearchViewController: UIViewController,LanguageDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toPickLangVC"{
             if let vc = segue.destination as? LanguagesViewController{
-                vc.delegate = self //Delegate Design Pattern 
+                vc.delegate = self //Delegate Design Pattern
                 if let sender = sender as? String{
                     if sender == "1"{
                         vc.bufferSegueText = "1"
@@ -205,18 +232,11 @@ class SearchViewController: UIViewController,LanguageDelegate {
     }
     
     func setStarImage(){
-        if #available(iOS 13.0, *) {
-            starButton.setImage(UIImage(systemName: "star"), for: .normal)
-        } else {
-            starButton.setImage(UIImage(named: "star"), for: .normal)
-        }
+        starButton.setImage(UIImage(systemName: "star"), for: .normal)
+
     }
     func setStarFillImage(){
-        if #available(iOS 13.0, *) {
-            starButton.setImage(UIImage(systemName: "star.fill"), for: .normal)
-        } else {
-            starButton.setImage(UIImage(named: "star.fill"), for: .normal)
-        }
+         starButton.setImage(UIImage(systemName: "star.fill"), for: .normal)
     }
 
 }

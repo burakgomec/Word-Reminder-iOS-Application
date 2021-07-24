@@ -17,8 +17,6 @@
 /* Class = "UIButton"; normalTitle = "Turkish"; ObjectID = "Bop-A2-6yn"; */
 "Bop-A2-6yn.normalTitle" = "Turkish";
 
-/* Class = "UITextView"; text = "Bu uygulama açık kaynak kodlu olarak geliştirilmiştir.Uygulamada IBM Watson Language Translator servisinin ücretsiz planı kullanılmıştır. Bu yüzden çeviri hizmeti ayda toplam 1,000,000 karakter ve sunucuya atılan istek sayısına göre IBM tarafından sınırlandırılmıştır. Aşağıda verilen link üzerinden uygulamanın tüm kaynak kodlarına ulaşabilirsiniz.\\n\\nUygulamaya Github ve Google Play üzerinden yıldız vererek destekleyebilir, öneriler sunabilirsiniz.\\n\\nIcons made by www.freepik.com\"\\n\\nOur preview images were created using 'Previewed' at previewed.app\\n\\nGeliştirici: Burak GÖMEÇ"; ObjectID = "IXZ-Qt-ZYa"; */
-"IXZ-Qt-ZYa.text" = "Bu uygulama açık kaynak kodlu olarak geliştirilmiştir.Uygulamada IBM Watson Language Translator servisinin ücretsiz planı kullanılmıştır. Bu yüzden çeviri hizmeti ayda toplam 1,000,000 karakter ve sunucuya atılan istek sayısına göre IBM tarafından sınırlandırılmıştır. Aşağıda verilen link üzerinden uygulamanın tüm kaynak kodlarına ulaşabilirsiniz.\\n\\nUygulamaya Github ve Google Play üzerinden yıldız vererek destekleyebilir, öneriler sunabilirsiniz.\\n\\nIcons made by www.freepik.com\"\\n\\nOur preview images were created using 'Previewed' at previewed.app\\n\\nGeliştirici: Burak GÖMEÇ";
 
 /* Class = "UINavigationItem"; title = "Settings"; ObjectID = "TeJ-si-u7n"; */
 "TeJ-si-u7n.title" = "Settings";
