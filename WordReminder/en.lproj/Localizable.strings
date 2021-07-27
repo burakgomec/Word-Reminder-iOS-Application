@@ -1,24 +1,67 @@
-/* 
-  Localizable.strings
-  WordReminder
-
-  Created by Burak on 21.07.2021.
-  
-*/
-
-"OK" = "Tamam";
-"Delete" = "Sil";
-"Cancel" = "Vazgeç";
-"Error" = "Hata";
-"Select second language" = "İkinci dili seçiniz";
-"English" = "İngilizce"; //?
-"Turkish" = "Türkçe";
-"Choose a language" = "Bir dil seçiniz";
-"Translate From:" = "Şu dilden çevir:";
-"Translate To:" = "Şu dile çevir:";
-"Star a translation to see it here" = "Kaydedilen çevirileri burada görmek için bir çeviriye yıldız ekleyin";
-"About" = "Hakkında";
-"Notifications" = "Bildirimler";
-"Feedback" = "Geri Bildirim";
-"Clear Translation History" = "Çeviri Geçmişini Temizle";
-"All translation history will be cleared from this application" = "Tüm çeviri geçmişi bu uygulamadan silinecek";
+"OK" = "OK";
+"Delete" = "Delete";
+"Cancel" = "Cancel";
+"Error" = "Error";
+"Select second language" = "Select second language";
+"Choose a language" = "Choose a language";
+"Translate From:" = "Translate From:";
+"Translate To:" = "Translate To:";
+"Star a translation to see it here" = "Star a translation to see it here";
+"About" = "About";
+"Notifications" = "Notifications";
+"Feedback" = "Feedback";
+"Clear Translation History" = "Clear Translation History";
+"All translation history will be cleared from this application" = "All translation history will be cleared from this application";
+"Turkish" = "Turkish";
+"English" = "English";
+"German" = "German";
+"French" = "French";
+"French-Canada" = "French-Canada";
+"Hindi" = "Hindi";
+"Hebrew" = "Hebrew";
+"Portuguese" = "Portuguese";
+"Traditional Chinese" = "Traditional Chinese";
+"Croatian" = "Croatian";
+"Hungarian" = "Hungarian";
+"Montenegrin" = "Montenegrin";
+"Indonesian" = "Indonesian Dili";
+"Italian" = "Italian";
+"Simplified Chinese" = "Simplified Chinese";
+"Japanese" = "Japanese";
+"Dutch" = "Dutch";
+"Finnish" = "Finnish";
+"Irish" = "Irish";
+"Gujarati" = "Gujarati";
+"Polish" = "Polish";
+"Danish" = "Danish";
+"Lithuanian" = "Lithuanian";
+"Latvian" = "Latvian";
+"Ukrainian" = "Ukrainian";
+"Urdu" = "Urdu";
+"Malayalam" = "Malayalam";
+"Malay" = "Malay";
+"Maltese" = "Maltese";
+"Greek" = "Greek";
+"Spanish" = "Spanish";
+"Estonian" = "Estonian";
+"Norwegian" = "Norwegian";
+"Vietnamese" = "Vietnamese";
+"Nepali" = "Nepali";
+"Romanian" = "Romanian";
+"Russian" = "Russian";
+"Bulgarian" = "Bulgarian";
+"Bengali" = "Bengali";
+"Bosnian" = "Bosnian";
+"Slovakian" = "Slovakian";
+"Slovenian" = "Slovenian";
+"Serbian" = "Serbian";
+"Korean" = "Korean";
+"Swedish" = "Swedish";
+"Tamil" = "Tamil";
+"Czech" = "Czech";
+"Telugu" = "Telugu";
+"Thai" = "Thai";
+"Welsh" = "Welsh";
+"Catalan" = "Catalan";
+"Basque" = "Basque";
+"Word Reminder is an open source translation reminder application. \n\nYou can access the entire source code of the application via the link below.\n\nYou can support my development of independent applications and offer suggestions by giving stars to the application on the App Store and Github. \n\nIcons made by www.freepik.com \n\nDeveloper: Burak GÖMEÇ" = "Word Reminder is an open source translation reminder application. \n\nYou can access the entire source code of the application via the link below.\n\nYou can support my development of independent applications and offer suggestions by giving stars to the application on the App Store and Github. \n\nIcons made by www.freepik.com \n\nDeveloper: Burak GÖMEÇ";
