@@ -65,3 +65,8 @@
 "Catalan" = "Katalanca";
 "Basque" = "Baskça";
 "Word Reminder is an open source translation reminder application. \n\nYou can access the entire source code of the application via the link below.\n\nYou can support my development of independent applications and offer suggestions by giving stars to the application on the App Store and Github. \n\nIcons made by www.freepik.com \n\nDeveloper: Burak GÖMEÇ" = "Word Reminder açık kaynak kodlu bir çeviri hatırlatıcısı uygulamasıdır.\n\nAşağıda yer alan link üzerinden uygulamanın tüm kaynak koduna erişebilirsiniz.\n\nUygulamaya App Store ve Github üzerinden yıldız vererek bağımsız uygulamalar geliştirmemi destekleyebilir, öneriler sunabilirsiniz.\n\nIcons made by www.freepik.com \n\nDeveloper: Burak GÖMEÇ";
+"Word Reminder notifies the saved translations every day at the specified time. \n\nYou can change your notification preference from Settings-Word Reminder-Notifications. \n\nYou can change the time zone of notifications by clicking the field below." = "Word Reminder her gün belirlenen saatte kaydedilen çevirileri bildirim atmaktadır. \n\nAyarlar-Word Reminder-Notifications üzerinden bildirim tercihinizi değiştirebilirsiniz.\n\nBildirimlerin saat dilimini aşağıdan değiştirebilirsiniz.";
+"Please change the notification preferences of the app" = "Lütfen uygulamanın bildirim tercihlerini değiştiriniz";
+"Here is one of your last recorded translations" = "İşte son kayıt ettiğiniz çevirilerden birisi";
+"Selected Time =" = "Seçili Zaman =";
+"You can access the source code of the application by clicking here" = "Uygulamanın kaynak koduna buraya tıklayarak ulaşabilirsiniz";

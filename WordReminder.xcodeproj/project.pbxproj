@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67066FEA26B3421600D3577D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67066FE926B3421600D3577D /* NotificationController.swift */; };
+		67066FEC26B342D200D3577D /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67066FEB26B342D200D3577D /* NotificationViewController.swift */; };
 		67088F4D26A320B300FBC5E0 /* SavedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67088F4C26A320B300FBC5E0 /* SavedCell.swift */; };
 		67100FBB26A462F800748EA0 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67100FBA26A462F800748EA0 /* CoreDataController.swift */; };
 		67100FBD26A46A0B00748EA0 /* UpdatesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67100FBC26A46A0B00748EA0 /* UpdatesDelegate.swift */; };
@@ -32,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		0A7B337BA8A70F795C78B327 /* Pods-WordReminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordReminder.debug.xcconfig"; path = "Target Support Files/Pods-WordReminder/Pods-WordReminder.debug.xcconfig"; sourceTree = "<group>"; };
+		67066FE926B3421600D3577D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		67066FEB26B342D200D3577D /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		67088F4C26A320B300FBC5E0 /* SavedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCell.swift; sourceTree = "<group>"; };
 		67100FBA26A462F800748EA0 /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
 		67100FBC26A46A0B00748EA0 /* UpdatesDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatesDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +82,7 @@
 			children = (
 				67A32C51266D64D9005A421D /* Service */,
 				67100FBA26A462F800748EA0 /* CoreDataController.swift */,
+				67066FE926B3421600D3577D /* NotificationController.swift */,
 			);
 			path = "Controller ";
 			sourceTree = "<group>";
@@ -104,7 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				67100FB926A462C800748EA0 /* Controller  */,
-				67107BD926A04D21008F0D73 /* WordReminder.entitlements */,
 				67740A5F266F81E000C00DE5 /* Utilities */,
 				67D59E4C266D6DC900547DEA /* Model */,
 				67B12EBE266C1FD300C66249 /* ViewController */,
@@ -112,6 +116,7 @@
 				67F8734526B0A6BC0099F96A /* Main.storyboard */,
 				676BCCA6266C11930049EA35 /* LaunchScreen.storyboard */,
 				676BCCA1266C11920049EA35 /* WordReminder.xcdatamodeld */,
+				67107BD926A04D21008F0D73 /* WordReminder.entitlements */,
 				676BCCA4266C11930049EA35 /* Assets.xcassets */,
 				671A25CB26A9A23800B531CB /* Info.plist */,
 				67F8734D26B0A6F40099F96A /* Localizable.strings */,
@@ -163,6 +168,7 @@
 				67A32C4D266D53FC005A421D /* SettingsViewController.swift */,
 				67088F4C26A320B300FBC5E0 /* SavedCell.swift */,
 				676A729926A4C327001F0160 /* AboutViewController.swift */,
+				67066FEB26B342D200D3577D /* NotificationViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -329,7 +335,9 @@
 				676A729A26A4C327001F0160 /* AboutViewController.swift in Sources */,
 				672CBA7D26A0655B00AEDA68 /* Keys.swift in Sources */,
 				67A32C4E266D53FC005A421D /* SettingsViewController.swift in Sources */,
+				67066FEA26B3421600D3577D /* NotificationController.swift in Sources */,
 				676BCC99266C11920049EA35 /* AppDelegate.swift in Sources */,
+				67066FEC26B342D200D3577D /* NotificationViewController.swift in Sources */,
 				67B12EC0266C211E00C66249 /* LanguagesViewController.swift in Sources */,
 				676BCCA3266C11920049EA35 /* WordReminder.xcdatamodeld in Sources */,
 				67DB0289266E4C9400B1E396 /* TranslatedWord.swift in Sources */,
@@ -421,7 +429,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -478,7 +486,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = NO;

@@ -57,7 +57,7 @@ extension SettingsViewController : UITableViewDelegate,UITableViewDataSource{
         case 0:
             performSegue(withIdentifier: "toAboutVC", sender: nil)
         case 1:
-            //
+            performSegue(withIdentifier: "toNotificationVC", sender: nil)
             break
         case 2:
             SKStoreReviewController.requestReviewInCurrentScene()

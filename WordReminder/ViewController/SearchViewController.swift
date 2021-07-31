@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class SearchViewController: UIViewController,LanguageDelegate {
     
@@ -90,6 +91,8 @@ class SearchViewController: UIViewController,LanguageDelegate {
             self.secondGroupStackView.frame.origin.x += self.view.bounds.width
         }, completion: nil)
     }
+    
+
     
     func wordReady(language: String,languageNumber:Int) {
         if(languageNumber == 1){
