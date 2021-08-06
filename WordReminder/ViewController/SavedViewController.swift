@@ -16,12 +16,12 @@ class SavedViewController: UIViewController, UITableViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.Custom.backgroundBlack
         recordedTableView.dataSource = self
         recordedTableView.delegate = self
         navigationBarHeight = self.navigationController?.navigationBar.frame.height ?? 0
         Constants.delegate = self
         CoreDataController.shared.delegate = self //Delegate Design Pattern
-        
     }
 
     override func viewDidLayoutSubviews() {

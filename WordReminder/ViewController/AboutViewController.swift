@@ -41,7 +41,7 @@ class AboutViewController: UIViewController{
     @objc func openGithubRepo(){
         let config = SFSafariViewController.Configuration()
         
-        let safariVC = SFSafariViewController(url: URL(string: "https://github.com/BurakGomec/Word-Reminder-iOS-Application")!, configuration: config)
+        let safariVC = SFSafariViewController(url: URL(string: "https://github.com/burakgomec/Word-Reminder-iOS-Application")!, configuration: config)
         present(safariVC, animated: true, completion: nil )
     }
 
